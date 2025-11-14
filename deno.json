@@ -1,0 +1,19 @@
+{
+  "name": "@ibodev/secret-key-generator",
+  "version": "1.0.0",
+  "exports": "./secret-key-generator.ts",
+  "tasks": {
+    "build": "deno compile --allow-write --allow-read -o dist/secret-key-generator secret-key-generator.ts"
+  },
+  "imports": {
+    "@std/cli": "jsr:@std/cli@^1.0.23",
+    "@std/crypto": "jsr:@std/crypto@^1.0.5",
+    "@std/encoding": "jsr:@std/encoding@^1.0.10",
+    "@std/path": "jsr:@std/path@^1.1.2"
+  },
+  "fmt": {
+    "singleQuote": true,
+    "semiColons": true,
+    "lineWidth": 120
+  }
+}
